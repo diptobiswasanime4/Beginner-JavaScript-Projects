@@ -1,45 +1,78 @@
-
-.heading {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 15px;
+* {
+    margin: 0px;
 }
 body {
-    background-color: lightblue;
+    margin: 10px;
+    background-color: lightskyblue;
+    font-family: "Comic Sans MS";
+}
+.heading-container {
+    width: 600px;
+    margin: auto;
+}
+.heading {
+    background-color: rgb(204, 236, 247);
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(33, 33, 212);
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px 3px rgb(17, 17, 155);
+    padding: 8px 10px 12px 10px;
+    margin: 20px;
+}
+
+.container {
+    background-color: rgb(204, 236, 247);;
+    width: 625px;
+    height: 500px;
+    border: 2px solid rgb(33, 33, 212);
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(17, 17, 155);
+    margin: auto;
 }
 .buttons {
     display: flex;
     justify-content: center;
+    padding: 40px 0px 10px 0px;
 }
 .selection {
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 3rem;
-    transition: 250ms;
+    font-size: 4rem;
+    transition: 300ms;
+    padding: 0px 15px 0px 15px;
 }
 .selection:hover {
-    transform: scale(1.25);
+    transform: scale(1.5);
+}
+.score-counter-name {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+}
+h4 {
+    padding: 30px 15px 5px 15px;
 }
 .score-counter {
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+}
+h3 {
+    padding: 10px 40px 5px 40px;
 }
 .score {
     display: flex;
     justify-content: center;
+    font-size: 2rem;
     padding-top: 0;
 }
 h2 {
     padding: 10px 25px 25px 25px;
-}
-h3 {
-    padding: 0px 25px 0px 25px;
-}
-h4 {
-    padding: 25px 25px 0px 25px;
 }
 .win-or-lose {
     display: flex;
@@ -47,4 +80,6 @@ h4 {
     padding: 0;
     margin: 0;
     border: 0;
+    padding: 10px;
+    font-size: 20px;
 }
