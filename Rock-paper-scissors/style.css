@@ -7,7 +7,7 @@ body {
     font-family: "Comic Sans MS";
 }
 .heading-container {
-    width: 600px;
+    width: 640px;
     margin: auto;
 }
 .heading {
@@ -17,7 +17,7 @@ body {
     border: 1px solid rgb(33, 33, 212);
     border-radius: 50px;
     box-shadow: 3px 3px 3px 3px rgb(17, 17, 155);
-    padding: 8px 10px 12px 10px;
+    padding: 15px 10px 20px 10px;
     margin: 20px;
 }
 
@@ -33,7 +33,7 @@ body {
 .buttons {
     display: flex;
     justify-content: center;
-    padding: 40px 0px 10px 0px;
+    padding: 45px 0px 10px 0px;
 }
 .selection {
     background: none;
