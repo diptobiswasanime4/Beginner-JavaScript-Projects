@@ -52,29 +52,44 @@ h1 {
     background-color: white;
     border: 2px solid grey;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgb(65, 63, 63);
+    box-shadow: 3px 3px 3px 3px rgb(65, 63, 63);
     font-family: sans-serif;
     font-size: 20px;
     margin: 8px;
     padding: 15px 0px 15px 15px;
 }
+.button:hover {
+    background-color: antiquewhite;
+}
+.button:active {
+    box-shadow: 1px 1px 1px 1px #666;
+}
 .red {
     background-color: rgb(253, 61, 61);
     border: 2px solid darkred;
-    box-shadow: 2px 2px 2px 2px black;
+    box-shadow: 3px 3px 3px 3px black;
+}
+.red:hover {
+    background-color: rgb(252, 130, 130);
 }
 .green {
     background-color: rgb(131, 250, 12);
     border: 2px solid green;
-    box-shadow: 2px 2px 2px 2px darkgreen;
+    box-shadow: 3px 3px 3px 3px darkgreen;
+}
+.green:hover {
+    background-color: rgb(172, 247, 97);
 }
 .blue {
     background-color: rgb(68, 68, 255);
     border: 2px solid darkblue;
-    box-shadow: 2px 2px 2px 2px black;
+    box-shadow: 3px 3px 3px 3px black;
+}
+.blue:hover {
+    background-color: rgb(119, 119, 243);
 }
 .orange {
     background-color: orange;
     border: 2px solid rgb(141, 78, 2);
-    box-shadow: 2px 2px 2px 2px brown;    
+    box-shadow: 3px 3px 3px 3px brown;    
 }

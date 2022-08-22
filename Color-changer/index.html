@@ -7,67 +7,6 @@
     <title>Color flipper</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <style>
-        * {
-            margin: 0px;
-        }
-        body {
-            background-color: whitesmoke;
-            margin: 10px;
-        }
-        .heading-container {
-            background-color: white;
-            font-family: Verdana;
-            width: 600px;
-            border: 2px solid red;
-            box-shadow: 3px 3px 3px 3px darkred;
-            border-radius: 25px;
-            margin: auto;
-            padding: 10px 15px 10px 15px;
-        }
-        .heading {
-            margin: auto;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            background-color: lawngreen;
-            margin: 20px auto;
-            border: 2px solid black;
-            box-shadow: 5px 5px 5px 5px black;
-            border-radius: 40px;
-            width: 600px;
-            height: 500px;
-        }
-        .features {
-            position: relative;
-            top: 200px;
-            left: 10px;
-        }
-        button {
-            font-family: sans-serif;
-            font-size: 20px;
-            border-radius: 40px;
-            background-color: lightcoral;
-            border: 1px solid darkred;
-            box-shadow: 2px 2px 2px 2px darkred;
-            padding: 10px 15px 10px 15px;
-            margin: 0px 0px 15px 0px;
-        }
-        input {
-            font-family: sans-serif;
-            font-size: 20px;
-            margin: 5px 10px 0px 10px;
-            border-radius: 40px;
-            border: 1px solid grey;
-            box-shadow: 4px 4px 4px 4px grey inset;
-            padding: 15px 0px 15px 0px;
-        }
-        #enter-color {
-            padding: 20px 0px 15px 25px;
-        }
-    </style>
 </head>
 <body>
     <div class="heading-container">
@@ -78,7 +17,7 @@
     <div class="container" id="container">
         <div class="features">
             <button id="generate-random-color" onclick="generateRandomColor()">Random Color</button>
-            <input type="text" id="enter-color" placeholder="Enter Hex-code">
+            <input type="text" id="enter-color" placeholder="Enter Color">
             <button id="generate-enter-color">Generate</button>
         </div>
     </div>
