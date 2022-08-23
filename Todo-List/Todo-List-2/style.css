@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(to right, darkorange, yellow);
+    font-family: sans-serif;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px 0px 0px;
+}
+.container {
+    border: 0px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 15px 0px;
+}
+#input-text {
+    width: 400px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid goldenrod;
+    box-shadow: 2px 2px 2px 2px darkgoldenrod inset;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 0px 0px 0px 15px;
+    margin: 6px 3px 0px 0px;
+}
+#add-todo {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid goldenrod;
+    box-shadow: 0px 5px 0px 0px darkgoldenrod;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0px 3px 0px 6px;
+}
+#add-todo:hover {
+    background-color: lightgoldenrodyellow;
+}
+#add-todo:active {
+    box-shadow: 0px 1px 0px 0px darkgoldenrod;
+}
+.todo-container {
+    display: flex;
+    flex-direction: column;
+}
+.new-todo-styling {
+    background: linear-gradient(to right, lightyellow, lightgreen);
+    font-family: sans-serif;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+.new-todo-styling {
+    position: relative;
+
+}
+.todo-checkbox {
+    position: absolute;
+    bottom: 7px;
+    right: 100px;
+}
+.edit-todo {
+    position: absolute;
+    right: 50px;
+    bottom: 2px;
+    background-color: greenyellow;
+    border: 1px solid darkgreen;
+    box-shadow: 0px 3px 0px 0px green;
+    border-radius: 10px;
+    margin: 4px;
+    padding: 4px;
+}
+.edit-todo:hover {
+    background-color: lightgreen;
+}
+.edit-todo:active {
+    box-shadow: 0px 1px 0px 0px green;
+}
+.del-todo {
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+    background-color: red;
+    border: 1px solid crimson;
+    box-shadow: 0px 3px 0px 0px darkred;
+    border-radius: 10px;
+    margin: 4px;
+    padding: 4px;
+}
+.del-todo:hover {
+    background-color: rgb(253, 63, 63);
+}
+.del-todo:active {
+    box-shadow: 0px 1px 0px 0px darkred;
+}

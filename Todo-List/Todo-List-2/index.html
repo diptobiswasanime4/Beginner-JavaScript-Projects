@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="heading">
+        <h1>Todo List</h1>
+    </div>
+    <div class="container">
+        <input type="text" id="input-text">
+        <button id="add-todo">+</button>
+    </div>
+    <div class="todo-container" id="todo-container">
+            <div class="new-todo-styling">
+                <div class="todo-text" type="disable">1. Complete the code.</div>
+                <input type="checkbox" class="todo-checkbox">
+                <button class="edit-todo">EDIT</button>
+                <button class="del-todo">DEL</button>
+            </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
