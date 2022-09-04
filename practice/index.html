@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,41 +8,84 @@
     <title>Boxes</title>
     <style>
         body {
-            border: 2px solid black;
-            margin: 4px;
+            border: 0px solid black;
+            margin: 0;
         }
+
         .container {
-            border: 2px solid green;
-            margin: 4px;
-        }
-        .box-container {
-            position: relative;
-            border: 2px solid red;
-            margin: 4px;
+            background: linear-gradient(to left, darkred, darkblue);
+            color: white;
+            border: 0px solid red;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
             display: flex;
-            width: 1000px;
-            height: 1000px;
+            justify-content: center;
+            align-items: center;
+            /* width: 100vw; */
+            /* height: 100vh; */
+            font-family: 'Courier New', Courier, monospace;
         }
-        .box {
-            border: 2px solid blue;
-            margin: 4px;
-            width: 50px;
-            height: 50px;
+
+        .left-bar {
+            border: 2px solid white;
+            height: 100vh;
+            width: 30vw;
         }
-        #box4 {
-            position: absolute;
-            right: 10px;
+
+        ul {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        li {
+            padding: 30px 10px;
+            margin: 10px;
+        }
+
+        .subject {
+            border: 0px solid blue;
+            margin: 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            width: 70vw;
+        }
+
+        h1 {
+            font-size: 25px;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="box-container">
-            <div class="box" id="box1">1</div>
-            <div class="box" id="box2">2</div>
-            <div class="box" id="box3">3</div>
-            <div class="box" id="box4">4</div>
+    <div class="container" id="container">
+        <div class="left-bar" id="left-bar">
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>x</li>
+                <li>y</li>
+                <li>z</li>
+            </ul>
+        </div>
+        <div class="subject" id="subject">
+
+            <div class="subject-heading" id="subject-heading">
+                <h1>Subject heading</h1>
+            </div>
+            <div class="subject-content" id="subject-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus cumque voluptatem magnam dolorum
+                    animi nostrum totam, omnis dicta exercitationem molestiae dignissimos dolorem aliquid a explicabo et
+                    veniam voluptas enim veritatis, perspiciatis, perferendis ratione! Saepe dicta, architecto ad
+                    doloremque facere quo debitis explicabo maxime, ipsa, quod aspernatur nostrum blanditiis aliquam at!
+                </p>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

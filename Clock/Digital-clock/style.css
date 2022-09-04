@@ -1,0 +1,26 @@
+body {
+    background-image: linear-gradient(to top right, darkblue, darkgreen, darkred);
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.digital-clock-container {
+    border: 0px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.digital-clock {
+    background-color: black;
+    border: 3px solid whitesmoke;
+    box-shadow: 5px 5px 0px 0px grey;
+    padding: 25px;
+    border-radius: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 24px;
+}

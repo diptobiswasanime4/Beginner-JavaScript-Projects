@@ -5,40 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- <script src="script.js" defer></script> -->
-    <style>
-        body {
-            background: linear-gradient(to left, darkred, darkblue);
-        }
-        .container {
-            background: linear-gradient(to right, darkgoldenrod, green);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 2px solid black;
-            border-radius: 40px;
-            font-family: sans-serif;
-            margin: 40px;
-        }
-        .btn-operations {
-            padding: 25px 25px 50px 25px;
-        }
-        button {
-            padding: 10px;
-            margin: 10px;
-            border-radius: 10px;
-            font-size: 15px;
-            border: 0px;
-            box-shadow: 0px 5px 0px 0px grey;
-        }
-        button:hover {
-            background-color: white;
-        }
-        button:active {
-            box-shadow: 0px 3px 0px 0px grey;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
         <div class="container">
@@ -52,22 +20,5 @@
                 <button id="increase" onclick="increase()">Increase</button>
             </div>
         </div>
-    <script>
-        var count = document.getElementById('count')
-        var iCount = 0
-
-        function decrease () {
-            iCount--;
-            count.innerHTML = "<h2>" + iCount + "</h2>"
-        }
-        function increase () {
-            iCount++;
-            count.innerHTML = "<h2>" + iCount + "</h2>"
-        }
-        function reset () {
-            iCount = 0;
-            count.innerHTML = "<h2>" + iCount + "</h2>"
-        }
-    </script>
 </body>
 </html>
