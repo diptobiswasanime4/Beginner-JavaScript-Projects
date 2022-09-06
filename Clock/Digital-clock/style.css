@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 0px;
+    background: ra;
 }
 
 .digital-clock-container {
@@ -17,7 +18,7 @@ body {
 .digital-clock {
     background-color: black;
     border: 3px solid whitesmoke;
-    box-shadow: 5px 5px 0px 0px grey;
+    box-shadow: 0px 6px 0px 0px grey;
     padding: 25px;
     border-radius: 25px;
     font-family: 'Courier New', Courier, monospace;
