@@ -1,0 +1,138 @@
+body {
+    background-color: lightskyblue;
+    color: white;
+}
+
+#proj-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 40px;
+    text-shadow: 0px 4px darkred;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sec-1 {
+    border: 2px solid black;
+    margin: 5px 5px 25px 5px;
+    padding: 5px;
+    background: linear-gradient(to left, red, orange, yellow, lawngreen, green);
+    border-radius: 25px;
+}
+
+.accordion {
+    /* border: 2px solid white; */
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.accordion-item {
+    /* border: 2px solid white; */
+    margin: 5px;
+    padding: 5px;
+}
+
+.accordion-item-header {
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: black;
+    border-radius: 15px;
+}
+
+.accordion-item-header:after {
+    content: "\002B";
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    right: 60px;
+    transition: transform 0.25s ease-in-out;
+}
+
+.accordion-item-header.active:after {
+    /* content: "\002D"; */
+    transform: rotate(45deg);
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.accordion-item-body-content {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.accordion-item-header.active+.accordion-item-body {
+    max-height: 400px;
+}
+
+.sec-2 {
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    background: linear-gradient(to left, red, orange, yellow, lawngreen, green);
+    border-radius: 25px;
+}
+
+.add-row-button {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    overflow-y: scroll;
+    max-height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+thead {
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+tbody {
+    border: 1px solid black;
+    margin: 0px 0px 8px 0px;
+    border-radius: 10px;
+}
+
+th {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    width: 250px;
+    border-radius: 10px;
+}
+
+td {
+    border: 1px solid black;
+    width: 256px;
+    text-align: center;
+    border-radius: 10px;
+}
