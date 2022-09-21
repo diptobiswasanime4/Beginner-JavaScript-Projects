@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Rock-paper-scissors</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        body {
+            background-color: lightskyblue;
+            font-family: "Comic Sans MS";
+            margin: 10px 0px 0px 0px;
+        }
+
+        .heading-container {
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+        }
+
+        .heading {
+            background-color: rgb(204, 236, 247);
+            display: flex;
+            justify-content: center;
+            height: 70px;
+            width: 625px;
+            border: 1px solid rgb(33, 33, 212);
+            border-radius: 50px;
+            box-shadow: 3px 3px 3px 3px rgb(17, 17, 155);
+            margin: 0px 0px 20px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        h1 {
+            margin: 10px 0px 0px 0px;
+        }
+
+        .container {
+            background-color: rgb(204, 236, 247);
+            ;
+            width: 625px;
+            height: 500px;
+            border: 2px solid rgb(33, 33, 212);
+            border-radius: 50px;
+            box-shadow: 5px 5px 5px 5px rgb(17, 17, 155);
+            margin: auto;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            padding: 45px 0px 10px 0px;
+        }
+
+        .selection {
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 4rem;
+            transition: 300ms;
+            padding: 0px 15px 0px 15px;
+        }
+
+        .selection:hover {
+            transform: scale(1.5);
+        }
+
+        .score-counter-name {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0px 10px 0px;
+            font-size: 20px;
+        }
+
+        h4 {
+            padding: 30px 15px 5px 15px;
+        }
+
+        .score-counter {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0px 10px 0px;
+            font-size: 20px;
+        }
+
+        h3 {
+            padding: 10px 40px 5px 40px;
+        }
+
+        .score {
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            padding-top: 0;
+        }
+
+        h2 {
+            padding: 10px 25px 25px 25px;
+        }
+
+        .win-or-lose {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading-container">
+        <div class="heading">
+            <h1>Rock-paper-scissors</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button class="selection" id="rock" onclick="clickRock()">✊</button>
+            <button class="selection" id="paper" onclick="clickPaper()">✋</button>
+            <button class="selection" id="scissor" onclick="clickScissor()">✌</button>
+            <button class="selection" id="a" onclick="clickA()">A</button>
+            <button class="selection" id="b" onclick="clickB()">B</button>
+            <button class="selection" id="c" onclick="clickC()">C</button>
+        </div>
+        <div class="score-counter-name">
+            <h4>You</h4>
+            <h4>Computer</h4>
+        </div>
+        <div class="score-counter">
+            <h3 id="you-score-count">0</h3>
+            <h3 id="computer-score-count">0</h3>
+        </div>
+        <div class="score">
+            <h2 id="you-score">✊</h2>
+            <h2 id="computer-score">✌</h2>
+        </div>
+        <div class="win-or-lose" id="win-or-lose">
+            You Win.
+        </div>
+    </div>
+    <script>
+        const rock = document.getElementById("rock");
+        const paper = document.getElementById("paper");
+        const scissor = document.getElementById("scissor");
+        const youScore = document.getElementById("you-score");
+        const computerScore = document.getElementById("computer-score");
+        const winOrLose = document.getElementById("win-or-lose");
+        const youScoreCount = document.getElementById("you-score-count");
+        const computerScoreCount = document.getElementById("computer-score-count");
+
+        let computerRandomNumber = 0;
+        var computerRandomChoice = "";
+        var yourChoice = "";
+        var youScoreCounter = 0;
+        var computerScoreCounter = 0;
+
+        function clickRock() {
+            yourChoice = "✊";
+            computerRandomNumber = Math.floor(Math.random() * 6);
+            if (computerRandomNumber === 0) computerRandomChoice = "✊";
+            else if (computerRandomNumber === 1) computerRandomChoice = "✋";
+            else if (computerRandomNumber === 2) computerRandomChoice = "✌";
+            else if (computerRandomNumber === 3) computerRandomChoice = "A";
+            else if (computerRandomNumber === 4) computerRandomChoice = "B";
+            else computerRandomChoice = "C";
+            youScore.innerText = yourChoice;
+            computerScore.innerText = `${computerRandomChoice}`;
+            if (computerRandomChoice === "✌" || computerRandomChoice === "A") {
+                winOrLose.innerText = "You Win.";
+                youScoreCounter += 1;
+                youScoreCount.innerText = youScoreCounter;
+            } else if (computerRandomChoice === "✋" || computerRandomChoice === "B") {
+                winOrLose.innerText = "You Lose!";
+                computerScoreCounter += 1;
+                computerScoreCount.innerText = computerScoreCounter;
+            } else winOrLose.innerText = "It's a draw.";
+        }
+        function clickPaper() {
+            yourChoice = "✋";
+            computerRandomNumber = Math.floor(Math.random() * 6);
+            if (computerRandomNumber === 0) computerRandomChoice = "✊";
+            else if (computerRandomNumber === 1) computerRandomChoice = "✋";
+            else if (computerRandomNumber === 2) computerRandomChoice = "✌";
+            else if (computerRandomNumber === 3) computerRandomChoice = "A";
+            else if (computerRandomNumber === 4) computerRandomChoice = "B";
+            else computerRandomChoice = "C";
+            youScore.innerText = yourChoice;
+            computerScore.innerText = `${computerRandomChoice}`;
+            if (computerRandomChoice === "✊" || computerRandomChoice === "B") {
+                winOrLose.innerText = "You Win.";
+                youScoreCounter += 1;
+                youScoreCount.innerText = youScoreCounter;
+            } else if (computerRandomChoice === "✌" || computerRandomChoice === "C") {
+                winOrLose.innerText = "You Lose!";
+                computerScoreCounter += 1;
+                computerScoreCount.innerText = computerScoreCounter;
+            } else winOrLose.innerText = "It's a draw.";
+        }
+        function clickScissor() {
+            yourChoice = "✌";
+            computerRandomNumber = Math.floor(Math.random() * 6);
+            if (computerRandomNumber === 0) computerRandomChoice = "✊";
+            else if (computerRandomNumber === 1) computerRandomChoice = "✋";
+            else if (computerRandomNumber === 2) computerRandomChoice = "✌";
+            else if (computerRandomNumber === 3) computerRandomChoice = "A";
+            else if (computerRandomNumber === 4) computerRandomChoice = "B";
+            else computerRandomChoice = "C";
+            youScore.innerText = yourChoice;
+            computerScore.innerText = `${computerRandomChoice}`;
+            if (computerRandomChoice === "✋" || computerRandomChoice === "C") {
+                winOrLose.innerText = "You Win.";
+                youScoreCounter += 1;
+                youScoreCount.innerText = youScoreCounter;
+            } else if (computerRandomChoice === "✊" || computerRandomChoice === "A") {
+                winOrLose.innerText = "You Lose!";
+                computerScoreCounter += 1;
+                computerScoreCount.innerText = computerScoreCounter;
+            } else winOrLose.innerText = "It's a draw.";
+        }
+        function clickA() {
+            yourChoice = "A";
+            computerRandomNumber = Math.floor(Math.random() * 6);
+            if (computerRandomNumber === 0) computerRandomChoice = "✊";
+            else if (computerRandomNumber === 1) computerRandomChoice = "✋";
+            else if (computerRandomNumber === 2) computerRandomChoice = "✌";
+            else if (computerRandomNumber === 3) computerRandomChoice = "A";
+            else if (computerRandomNumber === 4) computerRandomChoice = "B";
+            else computerRandomChoice = "C";
+            youScore.innerText = yourChoice;
+            computerScore.innerText = `${computerRandomChoice}`;
+            if (computerRandomChoice === "✌" || computerRandomChoice === "B") {
+                winOrLose.innerText = "You Win.";
+                youScoreCounter += 1;
+                youScoreCount.innerText = youScoreCounter;
+            } else if (computerRandomChoice === "✋" || computerRandomChoice === "C") {
+                winOrLose.innerText = "You Lose!";
+                computerScoreCounter += 1;
+                computerScoreCount.innerText = computerScoreCounter;
+            } else winOrLose.innerText = "It's a draw.";
+        }
+        function clickB() {
+            yourChoice = "B";
+            computerRandomNumber = Math.floor(Math.random() * 6);
+            if (computerRandomNumber === 0) computerRandomChoice = "✊";
+            else if (computerRandomNumber === 1) computerRandomChoice = "✋";
+            else if (computerRandomNumber === 2) computerRandomChoice = "✌";
+            else if (computerRandomNumber === 3) computerRandomChoice = "A";
+            else if (computerRandomNumber === 4) computerRandomChoice = "B";
+            else computerRandomChoice = "C";
+            youScore.innerText = yourChoice;
+            computerScore.innerText = `${computerRandomChoice}`;
+            if (computerRandomChoice === "✊" || computerRandomChoice === "C") {
+                winOrLose.innerText = "You Win.";
+                youScoreCounter += 1;
+                youScoreCount.innerText = youScoreCounter;
+            } else if (computerRandomChoice === "✌" || computerRandomChoice === "A") {
+                winOrLose.innerText = "You Lose!";
+                computerScoreCounter += 1;
+                computerScoreCount.innerText = computerScoreCounter;
+            } else winOrLose.innerText = "It's a draw.";
+        }
+        function clickC() {
+            yourChoice = "C";
+            computerRandomNumber = Math.floor(Math.random() * 6);
+            if (computerRandomNumber === 0) computerRandomChoice = "✊";
+            else if (computerRandomNumber === 1) computerRandomChoice = "✋";
+            else if (computerRandomNumber === 2) computerRandomChoice = "✌";
+            else if (computerRandomNumber === 3) computerRandomChoice = "A";
+            else if (computerRandomNumber === 4) computerRandomChoice = "B";
+            else computerRandomChoice = "C";
+            youScore.innerText = yourChoice;
+            computerScore.innerText = `${computerRandomChoice}`;
+            if (computerRandomChoice === "✋" || computerRandomChoice === "A") {
+                winOrLose.innerText = "You Win.";
+                youScoreCounter += 1;
+                youScoreCount.innerText = youScoreCounter;
+            } else if (computerRandomChoice === "✊" || computerRandomChoice === "B") {
+                winOrLose.innerText = "You Lose!";
+                computerScoreCounter += 1;
+                computerScoreCount.innerText = computerScoreCounter;
+            } else winOrLose.innerText = "It's a draw.";
+        }
+    </script>
+</body>
+
+</html>

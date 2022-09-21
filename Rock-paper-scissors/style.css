@@ -89,3 +89,25 @@ h2 {
     padding: 10px;
     font-size: 20px;
 }
+.adv-game {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    border: 2px solid darkblue;
+    background-color: white;
+    padding: 20px;
+    font-size: 25px;
+    box-shadow: 3px 3px 3px 3px darkblue;
+    border-radius: 25px;
+}
+.adv-game:hover {
+    background-color: antiquewhite;
+}
+.adv-game:active {
+    box-shadow: 1px 1px 1px 1px darkblue;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
