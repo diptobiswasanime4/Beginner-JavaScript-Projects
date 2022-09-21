@@ -6,12 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drawing App</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="script.js" defer></script> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-canvas {
+            display: flex;
+        }
+
+
+
+        #canvas {
+            border: 2px solid black;
+            width: 100vw;
+            height: 100vh;
+            box-shadow: 0px 0px 10px 10px black;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container-canvas" id="container-canvas">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script>
+        window.addEventListener("load", () => {
+            const containerCanvas = document.getElementById("container-canvas")
+            const canvas = document.querySelector("#canvas")
+            const ctx = canvas.getContext("2d")
+            const canvasOffsetX = canvas.offsetLeft;
+            const canvasOffsetY = canvas.offsetTop
 
+            containerCanvas.height = window.innerHeight
+            containerCanvas.width = window.innerWidth
+            canvas.height = containerCanvas.height
+            canvas.width = containerCanvas.width
+            let painting = false
+
+            function startPosition(e) {
+                painting = true
+                draw(e)
+            }
+            function endPosition(e) {
+                painting = false
+                ctx.beginPath()
+            }
+            function draw(e) {
+                if (!painting) return
+
+                ctx.lineWidth = 3
+                ctx.lineCap = 'round'
+
+                ctx.lineTo(e.clientX, e.clientY)
+                ctx.stroke()
+                ctx.beginPath()
+                ctx.moveTo(e.clientX, e.clientY)
+            }
+            canvas.addEventListener("mousedown", startPosition)
+            canvas.addEventListener("mouseup", endPosition)
+            canvas.addEventListener("mousemove", draw)
+        })
+    </script>
 </body>
 
 </html>
