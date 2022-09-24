@@ -1,9 +1,11 @@
+*, ::after, ::before {
+    font-family: 'Courier New', Courier, monospace;
+}
 body {
     background-image: linear-gradient(to top right, darkblue, darkgreen, darkred);
     display: flex;
     justify-content: center;
-    margin: 0px;
-    background: ra;
+    margin: 0px;    
 }
 
 .digital-clock-container {
@@ -13,6 +15,8 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    margin-right: 160px;
+    margin-top: 20px;
 }
 
 .digital-clock {
@@ -21,7 +25,22 @@ body {
     box-shadow: 0px 6px 0px 0px grey;
     padding: 25px;
     border-radius: 25px;
-    font-family: 'Courier New', Courier, monospace;
     color: white;
     font-size: 24px;
+}
+button {
+    width: 250px;
+    height: 50px;
+    margin: 10px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: white;
+}
+a {
+    text-decoration: none;
+    color: black;
 }

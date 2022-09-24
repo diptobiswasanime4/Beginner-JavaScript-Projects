@@ -105,11 +105,11 @@ p {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    background-color: orangered;
+    background-color: darkorange;
 }
 
 .about-btn:hover {
-    background-color: orange;
+    background-color: orangered;
 }
 
 .socials {
@@ -168,7 +168,12 @@ p {
     margin: 0px 20px 80px 20px;
     border: 1px solid black;
     box-shadow: 0px 0px 16px 8px black;
-    padding: 16px;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 500ms;
+}
+.project-card:hover {
+    transform: scale(1.25);
 }
 
 .project-card-image {
@@ -176,7 +181,7 @@ p {
     height: 200px;
     margin-bottom: 10px;
     background-size: cover;
-    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .card-image-1 {
