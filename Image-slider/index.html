@@ -5,12 +5,224 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider</title>
+    <title>Home - Welcome to JS projects</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="script.js" defer></script> -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background: linear-gradient(to right, lightgreen, lightblue);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0px;
+        }
+
+        .container {
+            margin: 0px;
+        }
+
+        .navbar {
+            color: black;
+            padding: 0px;
+            height: 100px;
+        }
+
+        .heading {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 12px;
+            font-size: 1.25rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            margin: 25px 12px 25px 12px;
+            padding: 10px;
+            width: 270px;
+            height: 400px;
+            box-shadow: 0px 0px 10px 10px black;
+            border-radius: 10px;
+            transition: 500ms;
+        }
+
+        .card:hover {
+            transform: scale(1.2);
+        }
+
+        .card-image {
+            background-color: lightseagreen;
+            height: 200px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-size: cover;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .card-image-1 {
+            background-image: url('images/Image-slider-1.PNG');
+        }
+
+        .card-image-2 {
+            background-image: url('images/Calculator.PNG');
+        }
+
+        .card-image-3 {
+            background-image: url('images/Canvas-Apps.PNG');
+        }
+
+        .card-image-4 {
+            background-image: url('images/Clock.PNG');
+        }
+
+        .card-image-5 {
+            background-image: url('images/Color-changer.PNG');
+        }
+
+        .card-image-6 {
+            background-image: url('images/Counter.PNG');
+        }
+
+        .card-image-9 {
+            background-image: url('images/Portfolio-website.PNG');
+        }
+
+        .card-image-10 {
+            background-image: url('images/Rock-paper-scissors.PNG');
+        }
+
+        footer {
+            height: 100px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-
+        <div class="navbar">
+            <div class="heading">
+                <h1>JS projects list</h1>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <a href="Image-slider-1\index.html">
+                    <div class="card-image card-image-1"></div>
+                    <h2>Image-slider-1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Image-slider-2\index.html">
+                    <div class="card-image card-image-2"></div>
+                    <h2>Image-slider-2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Image-slider-3\index.html">
+                    <div class="card-image card-image-3"></div>
+                    <h2>Image-slider-3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Image-slider-4\index.html">
+                    <div class="card-image card-image-4"></div>
+                    <h2>Image-slider-4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Image-slider-5\index.html">
+                    <div class="card-image card-image-5"></div>
+                    <h2>Image-slider-5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Image-slider-6\index.html">
+                    <div class="card-image card-image-6"></div>
+                    <h2>Image-slider-6</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Image-slider-7\index.html">
+                    <div class="card-image card-image-7"></div>
+                    <h2>Image-slider-7</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Image-slider-8\index.html">
+                    <div class="card-image card-image-8"></div>
+                    <h2>Image-slider-8</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Image-slider-9\index.html">
+                    <div class="card-image card-image-9"></div>
+                    <h2>Image-slider-9</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Image-slider-10\index.html">
+                    <div class="card-image card-image-10"></div>
+                    <h2>Image-slider-10</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Image-slider-11\index.html">
+                    <div class="card-image card-image-11"></div>
+                    <h2>Image-slider-11</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Image-slider-12\index.html">
+                    <div class="card-image card-image-12"></div>
+                    <h2>Image-slider-12</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque debitis sequi officia nostrum
+                        dicta. Voluptate velit nisi a vero excepturi tempora nostrum ipsam perferendis.</p>
+                </a>
+            </div>
+        </div>
+        <footer>
+        </footer>
     </div>
 </body>
 

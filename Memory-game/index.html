@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,107 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- <script src="script.js" defer></script> -->
     <style>
-        
+        body {
+            font-family: "Comic sans MS";
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: lightyellow;
+        }
+
+        #grid {
+            width: 400px;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid black;
+            padding: 5px;
+            background-color: white;
+        }
+
+        /* img {
+            margin: 2px;
+        } */
     </style>
 </head>
+
 <body>
-    
+    <h3>Score: <span id="score"></span></h3>
+    <div id="grid"></div>
+    <script>
+        const cardArray = [
+            {
+                name: 'Articuno',
+                img: 'images/Articuno100x100.png'
+            },
+            {
+                name: 'Charizard',
+                img: 'images/Charizard100x100.png'
+            },
+            {
+                name: 'Gengar',
+                img: 'images/Gengar100x100.png'
+            },
+            {
+                name: 'Marill',
+                img: 'images/Marill100x100.png'
+            },
+            {
+                name: 'Phanpy',
+                img: 'images/Phanpy100x100.png'
+            },
+            {
+                name: 'Pikachu',
+                img: 'images/Pikachu100x100.png'
+            },
+            {
+                name: 'Articuno',
+                img: 'images/Articuno100x100.png'
+            },
+            {
+                name: 'Charizard',
+                img: 'images/Charizard100x100.png'
+            },
+            {
+                name: 'Gengar',
+                img: 'images/Gengar100x100.png'
+            },
+            {
+                name: 'Marill',
+                img: 'images/Marill100x100.png'
+            },
+            {
+                name: 'Phanpy',
+                img: 'images/Phanpy100x100.png'
+            },
+            {
+                name: 'Pikachu',
+                img: 'images/Pikachu100x100.png'
+            }
+        ]
+        cardArray.sort(() => 0.5 - Math.random())
+        const grid = document.querySelector('#grid')
+        const cardChosen = []
+        function createBoard() {
+            for (i = 0; i < cardArray.length; i++) {
+                const card = document.createElement('img')
+                card.setAttribute('src', 'images/Blank.png')
+                card.setAttribute('data-id', i)
+                card.addEventListener('click', flipCard)
+                grid.appendChild(card)
+            }
+        }
+        function flipCard() {
+            let cardId = this.getAttribute('data-id')
+            cardChosen.push(cardArray[cardId].name)
+            console.log(cardChosen)
+            this.setAttribute('src', cardArray[cardId].img)
+            // console.log(cardArray[cardId].name + ' clicked ' + cardId)
+        }
+        createBoard()
+
+    </script>
 </body>
+
 </html>
