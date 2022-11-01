@@ -1,0 +1,97 @@
+body {
+    font-family: monospace;
+    font-size: 1rem;
+    margin: 0;
+    background-color: whitesmoke;
+}
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+.left {
+    border: 2px solid blue;
+    box-shadow: 0px 0px 4px 2px blue;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 6px 0px 10px;
+    border-radius: 25px;
+    width: 45vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    border: 2px solid orange;
+    box-shadow: 0px 0px 4px 2px orange;
+    background-color: darkgreen;
+    color: wheat;
+    padding: 10px 20px;
+    margin: 0px 10px 0px 6px;
+    border-radius: 25px;
+    width: 50vw;
+    height: 75vh;
+    overflow: auto;
+}
+#form {
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+}
+#username {
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px 0px black inset;
+    width: 45vw;
+    height: 4vh;
+    margin: 0px 0px 10px 0px;
+    font-size: 1.25rem;
+}
+#input {
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px 0px black inset;
+    width: 45vw;
+    height: 45vh;
+    font-size: 1.25rem;
+}
+#msg {
+    font-weight: 600;
+}
+#submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submit > button {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0px 1px 0px 1px wheat;
+}
+#submit > button:hover {
+    background-color: antiquewhite;
+}
+#submit > button:active {
+    box-shadow: 0px 0px 0px 0px white;
+}
+#posts {
+    width: 45vw;
+}
+#posts > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.options {
+    display: flex;
+    gap: 25px;
+}
+i {
+    cursor: pointer;
+}
