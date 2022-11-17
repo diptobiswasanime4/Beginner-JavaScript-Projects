@@ -185,7 +185,10 @@ p {
 }
 
 .card-image-1 {
-    background-image: url('images/Calculator.PNG');
+    background-image: url('../../images/Real-time-chat-room.PNG');
+}
+.card-image-2 {
+    background-image: url('../../images/Simple-Social-Media.PNG');
 }
 
 footer {
