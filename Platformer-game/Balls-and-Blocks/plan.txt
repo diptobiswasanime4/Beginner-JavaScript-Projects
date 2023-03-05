@@ -1,0 +1,9 @@
+1. Setup Env - C
+2. Player Attributes - C
+3. Gravity - C
+4. Player Movement - C
+5. Platforms - C
+6. Background Scroll - C
+7. Win Scenario - C
+8. Death Pit - C
+

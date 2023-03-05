@@ -1,0 +1,12 @@
+1. Create Player - C
+2. Player Movement - C
+3. Bullets fire - C
+4. One Invader - C
+5. Many Invaders - C
+6. Shoot Invaders - C
+7. Change Invaders grids width - C
+8. Spawn Invaders - C 
+9. Invaders shoot back - C
+10. Lose Condition - C
+11. Background stars - C
+12. Finishing touch

@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Comic Sans MS";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.score-board {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.1rem;
+}
+canvas {
+  border: 1px solid white;
+}
