@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS";
+}
+div {
+  position: fixed;
+  color: white;
+  margin: 2px 5px;
+  user-select: none;
+}

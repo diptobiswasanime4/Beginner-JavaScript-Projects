@@ -1,0 +1,5 @@
+1. Create Player & Enemy - C
+2. Movement - C
+3. Attack
+4. Health Bar
+5. Gameover

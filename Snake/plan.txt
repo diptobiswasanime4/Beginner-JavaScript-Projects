@@ -1,0 +1,5 @@
+1. Snake
+2. Move Snake
+    2a. Hit walls
+3. Fruit
+4. Eat Fruit
